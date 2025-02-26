@@ -21,7 +21,10 @@ const LINKING_ERROR =
   '- You rebuilt the app after installing the package\n' +
   '- You are not using Expo Go\n';
 
-const VoiceNativeModule = require('./NativeVoiceTurbo').default;
+const VoiceNativeModule =
+  Platform.OS === 'android'
+    ? require('./NativeVoiceTurbo').default
+    : require('./NativeVoiceIOS').default;
 
 const Voice = VoiceNativeModule
   ? VoiceNativeModule

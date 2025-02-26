@@ -1,6 +1,8 @@
 
-#import "generated/RNVoiceTurboSpec/RNVoiceTurboSpec.h"
+#import <React/RCTEventEmitter.h>
+#import <VoiceTurbo/RNVoiceTurboSpec.h>
 
-@interface VoiceTurbo : NSObject <NativeVoiceTurboSpec>
+
+@interface VoiceTurbo : RCTEventEmitter <NativeVoiceIOSSpec>
 
 @end
