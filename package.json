@@ -191,7 +191,7 @@
       "android": "android/generated"
     },
     "android": {
-      "javaPackageName": "com.voiceturbo"
+      "javaPackageName": "com.grapecity.leyserkids.voice"
     },
     "includesGeneratedCode": true
   },

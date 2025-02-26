@@ -42,7 +42,7 @@ def supportsNamespace() {
 
 android {
   if (supportsNamespace()) {
-    namespace "com.voiceturbo"
+    namespace "com.grapecity.leyserkids.voiceo"
 
     sourceSets {
       main {
@@ -106,6 +106,6 @@ if (isNewArchitectureEnabled()) {
   react {
     jsRootDir = file("../src/")
     libraryName = "VoiceTurbo"
-    codegenJavaPackageName = "com.voiceturbo"
+    codegenJavaPackageName = "com.grapecity.leyserkids.voice"
   }
 }
